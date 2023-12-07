@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #0C4C7D;
+  }
+  
+  .container {
+    width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 0 0 20px 20px;
+    background: #0C4C7D;
+    box-shadow:  8px 8px 16px #0A416A,
+                -8px -8px 16px #0E5790;
+  }
+  
+  .tabs {
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .tab {
+    padding: 10px;
+    color: #9BD1DA;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 8px;
+    background: #0C4C7D;
+  }
+  
+  .tab:hover, .tab.active {
+    background-color: #457B9D;
+    color: #9BD1DA;
+  }
+  
+  .tab-content {
+    display: none;
+  }
+  
+  .tab-content.active {
+    display: block;
+  }
+  
+  .stopwatch-timer,
+  .countdown-timer {
+    margin-bottom: 10px;
+    text-align: center;
+    color: #00ff26;
+    font-size: 48px;
+    font-weight: bold;
+    border-radius: 16px;
+    background: #0C4C7D;
+    box-shadow: inset 8px 8px 16px #0A416A,
+                inset -8px -8px 16px #0E5790;
+    padding: 30px;
+    margin: 20px 0;
+  }
+  
+  .stopwatch-controls,
+  .countdown-controls {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .stopwatch-controls div,
+  .countdown-controls div {
+    padding: 10px;
+    color: #9BD1DA;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 8px;
+    background: linear-gradient(145deg, #0d5186, #0b4471);
+    box-shadow:  2px 2px 8px #06263f,
+                 -2px -2px 8px #1272bc;
+  }
+  
+  .stopwatch-controls div:hover,
+  .countdown-controls div:hover {
+    background-color: #457B9D;
+    color: #9BD1DA;
+  }
+  
+  .stopwatch-controls .active,
+  .countdown-controls .active {
+    border-radius: 8px;
+    background: linear-gradient(145deg, #0b4471, #0d5186);
+    box-shadow:  2px 2px 8px #06263f,
+    -2px -2px 8px #1272bc;
+    cursor:default;
+  }
+  
+  #stopwatch-time,
+  #countdown-time {
+    color: #9BD1DA;
+  }
+
+  #stopwatch-milliseconds,
+  #countdown-milliseconds {
+    color: #9BD1DA;
+  }
+  
+  #countdown-hours,
+  #countdown-minutes,
+  #countdown-seconds {
+    width: 50px;
+  }
+  
+  #countdown-hours::-webkit-outer-spin-button,
+  #countdown-minutes::-webkit-outer-spin-button,
+  #countdown-seconds::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  #countdown-hours::-webkit-inner-spin-button,
+  #countdown-minutes::-webkit-inner-spin-button,
+  #countdown-seconds::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  #countdown-hours,
+  #countdown-minutes,
+  #countdown-seconds {
+    -moz-appearance: textfield;
+  }

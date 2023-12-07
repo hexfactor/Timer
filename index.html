@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timer</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="tabs">
+      <div class="tab" data-tab="stopwatch">Stopwatch</div>
+      <div class="tab" data-tab="countdown">Countdown</div>
+    </div>
+    <div class="tab-content" data-tab="stopwatch">
+      <div class="stopwatch-timer">
+        <h2 id="stopwatch-time">00:00:00</h2>
+      </div>
+      <div class="stopwatch-controls">
+        <div id="start-stopwatch">Start</div>
+        <div id="stop-stopwatch" class="active">Stop</div>
+        <div id="reset-stopwatch">Reset</div>
+    </div>
+  </div>
+  <div class="tab-content" data-tab="countdown">
+    <div class="countdown-timer">
+      <h2 id="countdown-time" contenteditable>00:00:00</h2>
+    </div>
+    <div class="countdown-controls">
+      <div id="start-countdown">Start</div>
+      <div id="stop-countdown" class="active">Stop</div>
+    </div>
+  </div>
+</div>
+<script src="timer.js"></script>
+</body>
+</html>
